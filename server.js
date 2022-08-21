@@ -96,8 +96,7 @@ async function generatePNG(req, res, redis) {
     'width': size,
     // 'puppeteer' : {'args' : ['--no-sandbox', '--disable-setuid-sandbox']}
   });
-  res.send(element.innerHTML)
-  // sendPNG(res, png, filename)
+  sendPNG(res, png, filename)
 }
 
 // Listen
